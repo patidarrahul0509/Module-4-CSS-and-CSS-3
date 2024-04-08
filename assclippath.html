@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ass clip path</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main{
+           
+            width: 90%;
+            height:100vh;
+            margin: 0% auto;
+            padding-left: 15px;
+            background: url(https://img.freepik.com/free-photo/young-woman-walking-wooden-path-with-green-rice-field-vang-vieng-laos_335224-1258.jpg?w=1060&t=st=1698484900~exp=1698485500~hmac=1c187f8db76f23de09ae66a080c248b0c1f26cde1c70cf2e7daa9b02155c4627);
+            background-repeat: repeat;
+            background-size: cover;
+            clip-path: polygon(100% 88%, 52% 100%, 0 88%, 0 0, 100% 0);
+            position: relative;
+        }
+       .main .header{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+       }
+       .header h2{
+            border: 5px solid black;
+            font-size: 40px;
+            letter-spacing: 5px;
+       }
+       .header h2 span{
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+       }
+       .menu a{
+            text-decoration: none;
+            padding: 10px;
+            font-size: 30px;
+            color: white;
+        } 
+        /* .menu a span{
+            color: black;
+            text-decoration-line:underline;
+            text-underline-offset: 12px;
+        } */
+        .menu a:hover{
+            color: black;
+            text-decoration-line:underline;
+            text-underline-offset: 12px;
+        }
+        .content{
+            width: 100%;
+            text-align: center;
+            margin:8% auto;
+            padding:15px;
+            color: black;
+        }
+        .content span{
+            font-size: 22px;
+        }
+        .content h1{
+            letter-spacing: 5px;
+        }
+        .main .content p{
+            margin-bottom: 3%;
+            font-size: 20px;
+            color:black;
+        }
+        /* .button-1{
+            border: 2px solid black;
+            margin: 15px;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .button-1:hover{
+            background-color:white;
+            border: 2px solid black;
+        } */
+        .button {
+          width: 170px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          text-align: center;
+          color: #000;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-left: 15px;
+          margin-bottom: 15px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+         .button-1 {
+          background-color: transparent;
+          border: 2px solid black;
+          border-radius: 50px;
+          -webkit-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+          color: black;
+        }
+        .button-1:hover {
+          box-shadow: 0 0 10px 0 black inset, 0 0 20px 2px black;
+          border: 2px solid black;
+          background-color: orangered;
+        } 
+
+       /* .button-1 {
+         color: #fff;
+         border: 3px solid black;
+         background-image: -webkit-linear-gradient(30deg, #c266d3 50%, transparent 50%);
+         background-image: linear-gradient(30deg, #c266d3 50%, transparent 50%);
+         background-size: 500px;
+         background-repeat: no-repeat;
+         background-position: 0%;
+         -webkit-transition: background 300ms ease-in-out;
+         transition: background 300ms ease-in-out;
+       }
+       .button-1:hover {
+         background-position: 100%;
+         color: black;
+         box-shadow: 0 0 10px 0 black inset, 0 0 20px 2px black;
+       }  */
+       .main2{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        justify-content: space-around;
+
+       }
+       .main2 .icon{
+        /* border: 2px solid black; */
+        width: 20%;
+       }
+       .main2 .icon h2{
+        color: orangered;
+        text-decoration: underline;
+        padding: 15px 0px;
+        text-underline-offset: 15px;
+
+       }
+       .main2 .icon i{
+        color: orangered;
+        border: 2px solid black;
+        padding: 20px;
+        width: 50px;
+       }
+       .main2 .icon i:hover{
+        color: #000;
+        border: 5px solid orangered;
+        overflow: hidden;
+       }
+       .bx{
+            width: 90%;
+            margin: 0% auto;
+            position: absolute;
+            /* top: 80px; */
+            /* right: -5px; */
+
+        }
+         .bx .but{
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            background-color: lightgrey;
+            position:absolute;
+            margin: 0% auto;
+            /* top:0px;  */
+            right: 0%;
+            left: 0%;
+            top: 50%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+      <div class="header">
+         <div class="logo">
+           <h2> <span>L</span>ogo</h2>
+         </div>
+         <div class="menu">
+            <a href=""><span>Home</span></a>
+            <a href="">About us</a>
+            <a href="">Portfolio</a>
+            <a href="">Pricing</a>
+            <a href="">Team</a>
+            <a href="">Blog</a>
+            <a href="">Contect</a>
+        </div>
+      </div>
+
+        <div class="content">
+            <span> Our clients Are Our Frist priority</span>
+            <h1>WELCOME TO THE SKY</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ducimus <br>
+              id autem magnam odio maxime voluptates consectetur culpa officia <br>fugit doloremque! Illo neque nihil omnis incidun.<br></p>
+              
+            <div class="button button-1">GET STARTED NOW</div>
+            <div class="button button-1">LEARN MORE</div>
+        </div>
+        <!-- <div class="bx">
+          <div class="but">
+            <i class="fa-solid fa-anchor"></i>
+          </div>
+          </div> -->
+          <i id="name" class="fa fa-pen-clip icon"></i>
+          <div class="bx"></div>
+      </div>
+<div class="main2">
+  <div class="icon">
+    <i class="fa-solid fa-vr-cardboard"></i>
+    <h2>SLEEK DESIGN</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus minus necessitatibus vitae adipisci accusamus quibusdam delectus facilis! Ea adipisci a, quis ut incidunt saepe?</P>
+  </div>
+  <div class="icon">
+    <i class="fa-regular fa-heart"></i>
+    <h2>CLEAN CODE</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus minus necessitatibus vitae adipisci accusamus quibusdam delectus facilis! Ea adipisci a, quis ut incidunt saepe?</P>
+  </div>
+  <div class="icon">
+    <i class="fa-regular fa-lightbulb"></i>
+    <h2>CREATIVE IDEA</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus minus necessitatibus vitae adipisci accusamus quibusdam delectus facilis! Ea adipisci a, quis ut incidunt saepe?</P>
+  </div>
+  <div class="icon">
+    <i class="fa-regular fa-message"></i>
+    <h2>FREE SUPPORT</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus minus necessitatibus vitae adipisci accusamus quibusdam delectus facilis! Ea adipisci a, quis ut incidunt saepe?</P>
+  </div>
+</div>
+   
+</body>
+</html>

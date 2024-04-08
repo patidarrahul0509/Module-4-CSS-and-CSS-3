@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_ASSIGNMENT BGCOLOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 95%;
+            height: 100vh;
+            position: relative;
+            margin: 2% auto;
+            display: flex;
+        }
+        .main .m-left{
+            width: 50%;
+            height: 90%;
+            background-color: rgb(1, 20, 20);
+            text-align: end;
+            padding:10% 5% 10% 0%;
+            
+        }
+        .main .m-left h2{
+            color: white;
+            letter-spacing: 3px;
+            font-size: 30px;
+        }
+        .main .m-left h3{
+            color: orangered;
+            padding: 40px 0px 10px 0px;
+        }
+        .main .m-left p{
+            padding-left: 20%;
+            color: bisque;
+            word-spacing: 2px;
+        }
+        .main .bt{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: white;
+            border: 2px solid white;
+            transition: 1s linear;
+        } 
+        .main .bt:hover{
+            scale: 1.5;
+            color: brown;
+            background-color: black;
+        }  
+        .main .btn1{
+            position: absolute;
+            left: 48%;
+            top:33%; 
+            padding: 13px;
+            font-size: 20px;
+            color: black;    
+        }
+        .main .btn2{
+            position: absolute;
+            left: 48%;
+            top:48%; 
+            padding: 13px;
+            font-size: 20px;
+            color: black;    
+        }
+        .main .btn3{
+            position: absolute;
+            left: 48%;
+            bottom:29%; 
+            padding: 13px;
+            font-size: 20px;
+            color: black;    
+        }
+        .main .m-right{
+            width: 50%;
+            height: 90%;
+            background-color: red;
+            background: url(https://img.freepik.com/free-vector/digital-global-connection-network-technology-background_1017-23324.jpg?w=1380&t=st=1699429198~exp=1699429798~hmac=3363048034b82f3b9159a53f3bd92091a0ec376f65443541ca264545d40afc1e);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="m-left">
+            <h2>OUR SERVICES</h2>
+            <h3>WEB DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+           
+       
+            <h3>PRINT DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+        
+            <h3>PHOTOGRAPHY</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+        </div>
+        <div class="btn1 bt">
+            <i class="fa fa-computer"></i>
+        </div>
+        <div class="btn2 bt">
+            <i class="fa fa-print"></i>
+        </div>
+        <div class="btn3 bt">
+            <i class="fa fa-camera"></i>
+        </div>
+            <div class="m-right"></div>
+    </div>
+</body>
+</html>
