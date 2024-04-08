@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid | css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bx{
+            height: 250px;
+            /* border: 1px solid black; */
+        }
+        .box{
+            width: 95%;
+            margin: 5% auto;
+            /* height: 800px; */
+            background-color: #1f1f1f;
+            display: flex;
+        }
+
+        /* lf start  */
+        .box .bx-lf{
+            width: 85%;
+            height: 100%;
+            background-color:#1f1f1f;
+            overflow: hidden;
+        }
+         .box .bx-rt{
+            padding: 10px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: white;
+            width: 15%;
+        }
+        .box .bx-rt a{
+            color: white;
+            line-height: 22px;
+            text-decoration: none;
+        }
+
+        /* row 1 start  */
+        .box .bx-lf .row1{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows:  250px;
+            gap: 10px;
+
+        }
+
+        .box .bx-lf .row1 .bx1{
+            background: url(https://img.freepik.com/free-photo/amazing-bengal-tiger-nature_475641-1251.jpg?w=1060&t=st=1696925828~exp=1696926428~hmac=94a748d81239bb3537cf70969941239f61e117cf282d1ed372c25d6286380536);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+
+        .box .bx-lf .row1 .bx1:hover{
+            background-position: center center;
+            filter: blur(0px);
+        }
+
+        .box .bx-lf .row1 .bx2{
+            background: url(https://img.freepik.com/free-photo/amazing-bengal-tiger-nature_475641-1205.jpg?w=1060&t=st=1696926124~exp=1696926724~hmac=72eb439ce7b2e642bd56dba12b6f682941fdbd5c519d2556104cfa3cb197f4c3);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row1 .bx2:hover{
+            /* background: url(https://img.freepik.com/free-photo/landscape-shot-beautiful-cholatse-mountains-body-water-khumbu-nepal_181624-24825.jpg?w=1380&t=st=1696852612~exp=1696853212~hmac=5a2201861d5af9463fd501b77cadea7ccaab80ec8692a717b606ada82dd639e2); */
+            background-position: center bottom;
+            filter: blur(0px);
+        }
+        /* row 1 end  */
+        
+        /* row 2 start  */
+        .box .bx-lf .row2{
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows:  250px;
+            gap: 10px;
+            margin-top: 15px;
+
+        }
+
+        .box .bx-lf .row2 .bx3{
+            background: url(https://img.freepik.com/free-photo/amazing-bengal-tiger-nature_475641-1279.jpg?w=1060&t=st=1696928137~exp=1696928737~hmac=c302aa6fe350f3677e099aae1063f4056db6701c9518d59515625a944dcd5832);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row2 .bx3:hover{
+            background-position: center right;
+            filter:blur(0px);
+        }
+
+        .box .bx-lf .row2 .bx4{
+            background: url(https://img.freepik.com/free-photo/tiger-nature-habitat-tiger-male-walking-head-composition-wildlife-scene-with-danger-animal-hot-summer-rajasthan-india-dry-trees-with-beautiful-indian-tiger-panthera-tigris_475641-1885.jpg?w=1060&t=st=1696925679~exp=1696926279~hmac=a17c510b82ddb3ada5d75fb2de08ac9b9e85599c76238b999c5648d020b02039);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row2 .bx4:hover{
+            background-position: center bottom;
+            filter: blur(0px);
+        }
+
+
+        .box .bx-lf .row2 .bx5{
+            background: url(https://img.freepik.com/free-photo/amazing-bengal-tiger-nature_475641-1231.jpg?w=1060&t=st=1696925738~exp=1696926338~hmac=cf2b663bdd98d46831b80f8ea194b90c5ff482de4918fd115ab94d6099bdf837);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row2 .bx5:hover{
+            background-position: center right;
+            filter: blur(0px);
+        }
+        /* row 2 end  */
+
+        /* row 3 start  */
+        .box .bx-lf .row3{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:  250px;
+            gap: 10px;
+            margin-top: 15px;
+
+        }
+
+        .box .bx-lf .row3 .bx6{
+            background: url(https://img.freepik.com/free-photo/shallow-focus-shot-male-lion-resting-grass-field_181624-15831.jpg?w=1060&t=st=1696925451~exp=1696926051~hmac=bfd88d26ada35c2eb9ce347a0171b7c85650c9b5a4ffcdee50697b962bb2d936);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row3 .bx6:hover{
+            background-position: center center;
+            filter: blur(0px);
+        }
+
+        .box .bx-lf .row3 .bx7{
+            background: url(https://img.freepik.com/free-photo/amazing-bengal-tiger-nature_475641-1137.jpg?w=1060&t=st=1696925486~exp=1696926086~hmac=8cbfaa48985a1385b69e346529601f338fd0b8909603485a3539773a5240ad03);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row3 .bx7:hover{
+            background-position: center center;
+            filter: blur(0px);
+        }
+
+        /* row 3 end  */
+
+        /* row 4 start  */
+            .box .bx-lf .row4{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:  250px;
+            gap: 10px;
+            margin-top: 15px;
+
+        }
+
+        .box .bx-lf .row4 .bx8{
+            background: url(https://img.freepik.com/free-photo/animal-wild-nature-undomesticated-cat-close-up-portrait-generative-ai_188544-8150.jpg?w=740&t=st=1696925538~exp=1696926138~hmac=c005fcce69272bd8d9a13730ac7dd1ee6f326223136fe8bc9a3f8f6bf16528a6);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row4 .bx8:hover{
+            filter: blur(0px);
+            background-position: center center;
+        }
+
+        .box .bx-lf .row4 .bx9{
+            background: url(https://img.freepik.com/free-photo/african-lion-portrait-warm-light_475641-46.jpg?w=1060&t=st=1696925580~exp=1696926180~hmac=a162bc12ff978474e4f625a2084adce93a2a37bfc3b6d0676fc8ee20a990bb8d);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row4 .bx9:hover{
+            background-position: center center;
+            filter: blur(0px);
+        }
+
+        .box .bx-lf .row4 .bx10{
+            background: url(https://img.freepik.com/free-photo/amazing-bengal-tigers-nature_475641-1135.jpg?w=1060&t=st=1696925610~exp=1696926210~hmac=a864c79341194d81c5afb14b7e03c08e02f6792f0e956eeb425b9f304c505a11);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s linear;
+            filter: blur(5px);
+        }
+        .box .bx-lf .row4 .bx10:hover{
+            background-position: center center;
+            filter: blur(0px);
+        }
+        /* row 4 end  */
+
+        /* lf end  */
+        .box .bx-rt{
+            padding: 10px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: white;
+            width: 15%;
+        }
+        .box .bx-rt a{
+            color: white;
+            line-height: 22px;
+            text-decoration: none;
+        }
+        .box .bx-rt i{
+            flex-direction: row;
+        }
+        .icon{
+            padding-top: 20px;
+        }
+        .icon a{
+            padding-right: 5px;
+        }
+        @media screen and (max-width:880px) {
+            .box{
+                flex-direction: column-reverse;
+            }
+            .box .bx-lf{
+                width: 100%;
+            }
+            .box .bx-rt{ 
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .box .bx-lf .row1{
+                grid-template-columns: 1fr;
+            }
+            .box .bx-lf .row2{
+                grid-template-columns: 1fr;
+            }
+            .box .bx-lf .row3{
+                grid-template-columns: 1fr;
+            }
+            .box .bx-lf .row4{
+                grid-template-columns: 1fr;
+            }
+            .box .bx-lf .row1 .bx1{
+                width: 100%;
+            }
+            .box .bx-lf .row1 .bx2{
+                width: 100%;
+            }
+            .box .bx-lf .row2 .bx3{
+                width: 100%;
+            }
+            .box .bx-lf .row2 .bx4{
+                width: 100%;
+            }
+            .box .bx-lf .row2 .bx5{
+                width: 100%;
+            }
+            .box .bx-lf .row3 .bx6{
+                width: 100%;
+            }
+            .box .bx-lf .row3 .bx7{
+                width: 100%;
+            }
+            .box .bx-lf .row4 .bx8{
+                width: 100%;
+            }
+            .box .bx-lf .row4 .bx9{
+                width: 100%;
+            }
+            .box .bx-lf .row4 .bx10{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="bx-lf">
+            <div class="row1">
+                <div class="bx bx1"></div>
+                <div class="bx bx2"></div>
+            </div>
+
+            <div class="row2">
+                <div class="bx bx3"></div>
+                <div class="bx bx4"></div>                
+                <div class="bx bx5"></div>                
+            </div>
+            <div class="row3">
+                <div class="bx bx6"></div>
+                <div class="bx bx7"></div>
+            </div>
+            <div class="row4">
+                <div class="bx bx8"></div>
+                <div class="bx bx9"></div>
+                <div class="bx bx10"></div>
+            </div>
+        </div>
+        <div class="bx-rt">
+            <h2>shutter</h2>
+            <a href="">HOME</a>
+            <a href="">PHOTO</a>
+            <a href="">BG</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACT</a>
+            <div class="icon">
+            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
